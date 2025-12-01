@@ -9,14 +9,16 @@ class Riddle {
     }
 
     ask() {
-        console.log(`name: ${name} dscription: ${this.riddleDescription}`);
+        console.log(`Riddle ${this.id} name: ${this.name} \n dscription: ${this.riddleDescription}`);
         while (true) {
             let answer = readline.question("enter your answer :")
             if (answer === this.correctAnswer) {
+                console.log("Correct!");
                 return
             }
         }
     }
+
     recoredTime() {
         const d = new Date()
         let time = d.getSeconds()
@@ -24,4 +26,4 @@ class Riddle {
     }
 }
 
-module.exports = { Riddle: Riddle }
+module.exports = { Riddle }

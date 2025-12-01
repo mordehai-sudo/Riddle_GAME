@@ -1,4 +1,4 @@
-export default riddles = [
+const riddles = [
     {
         id: 1,
         name: "Easy Math",
@@ -57,6 +57,8 @@ export default riddles = [
         id: 10,
         name: "Easy Math",
         taskDescription: "What is 15 + 3?",
-        correctAnswer: "5"
+        correctAnswer: "18"
     }
-] 
+]
+
+module.exports = { riddles }
